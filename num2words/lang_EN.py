@@ -61,9 +61,9 @@ class Num2Word_EN(lang_EU.Num2Word_EU):
         if lnum == 1 and rnum < 100:
             return (rtext, rnum)
         elif 100 > lnum > rnum:
-            return ("%s-%s" % (ltext, rtext), lnum + rnum)
+            return ("%s %s" % (ltext, rtext), lnum + rnum)
         elif lnum >= 100 > rnum:
-            return ("%s and %s" % (ltext, rtext), lnum + rnum)
+            return ("%s %s" % (ltext, rtext), lnum + rnum)
         elif rnum > lnum:
             return ("%s %s" % (ltext, rtext), lnum * rnum)
         return ("%s, %s" % (ltext, rtext), lnum + rnum)
