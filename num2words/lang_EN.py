@@ -33,8 +33,7 @@ class Num2Word_EN(lang_EU.Num2Word_EU):
         self.pointword = "point"
         self.exclude_title = ["and", "point", "minus"]
 
-        self.mid_numwords = [(1000, "thousand"), (100, "hundred"),
-                             (90, "ninety"), (80, "eighty"), (70, "seventy"),
+        self.mid_numwords = [(90, "ninety"), (80, "eighty"), (70, "seventy"),
                              (60, "sixty"), (50, "fifty"), (40, "forty"),
                              (30, "thirty")]
         self.low_numwords = ["twenty", "nineteen", "eighteen", "seventeen",
